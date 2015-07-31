@@ -145,7 +145,7 @@ console.log(person.address.city);
 console.log(person.address.street);
 console.log(person['address']["state"]);*/
 
-var person = {
+/*var person = {
     firstname : "Jackie",
     lastname : "Wu",
     address : {
@@ -166,4 +166,66 @@ console.log(person);
 
 person.address2 = {
     street: "Nguyen Dinh Chieu",
+};*/
+
+/*var greet = "Hello";
+var greet = "Hola !";
+
+console.log(greet);
+
+var english = {
+    greetings : {basic: "Hello"}
 };
+
+var spanish = {};
+
+//english.greet = "Hello";
+
+spanish.greet = "Hola";
+
+//console.log(english);
+
+var objectLiteral = {
+    fristName : "Mary",
+    isAProgrammer : true
+};
+
+console.log(objectLiteral);
+console.log(JSON.stringify(objectLiteral));
+
+var jsonValue = JSON.parse('{"firstName" : "Mary", "isAProgrammer" : true}');
+console.log(jsonValue);*/
+
+/*function greet() {
+    console.log('hi');
+}
+
+greet.language = "english";
+console.log(greet.language);*/
+
+greet();
+
+function greet() {
+    console.log("hi");
+}
+
+//annoymousGreet();
+
+var annoymousGreet = function() {
+    console.log("hi");
+}
+
+annoymousGreet();
+
+function log(a) {
+    //console.log(a);
+    a();
+}
+var b = {
+    greeting :  "hi"
+};
+
+var b = function(){
+    console.log("hi");
+}
+log(b);
